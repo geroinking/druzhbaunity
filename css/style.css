@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0 10vw;
+    overflow-x: hidden;
+    background-image: url(../img/back1.gif);
+    color: #ffffff;
+}
+
+.frame {
+    margin-top: 5vh;
+    width: 80vw;
+    position: fixed;
+    z-index: 1;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#navbar {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: inherit;
+}
+
+.menu-list {
+    display: -webkit-box;
+    display: flex;
+}
+
+.list {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.about {
+    text-decoration: none;
+    color: #ffffff;
+    font-style: "Untitled Sans Medium", sans-serif;
+    font-weight: 400;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+}
+
+.social:hover,
+.social:focus {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.list:hover,
+.list:focus {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.about:hover,
+.about:focus {
+    color: #db180f;
+    text-transform: uppercase;
+    margin: 0 1vw;
+}
+
+.social-links {
+    position: fixed;
+    top: 90vh;
+    left: 80vw;
+    z-index: 1;
+    width: 10%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-right: auto;
+    padding: 0;
+}
+
+.instagram {
+    height: 20px;
+    width: 20px;
+}
+
+.telegram {
+    height: 20px;
+    width: 20px;
+}
+
+.facebook {
+    height: 20px;
+    width: 20px;
+}
+
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper-3d {
+    position: relative;
+    -webkit-perspective: 20vw;
+    perspective: 20vw;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: -webkit-box;
+    display: flex;
+}
+
+.fold-content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fold {
+    overflow: hidden;
+    width: 75vw;
+    height: 70vh;
+}
+
+.fold-top {
+    position: absolute;
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+}
+
+.fold-bottom {
+    position: absolute;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    right: 0;
+    left: 0;
+    top: 100%;
+}
+
+.fold-align {
+    width: 100%;
+    height: 100%;
+}
+
+.fold-bottom .fold-align {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.fold-top .fold-align {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.fold-bottom {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+}
+
+.fold-top {
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg);
+}
+
+.square {
+    width: 100%;
+    padding-bottom: 75%;
+}
+
+.semargl {
+    background-image: url(../img/transemargl.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.grey {
+    background-color: rgba(128, 128, 128, 50%);
+    padding: 20% 20%;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .menu-list {
+        padding: 0 10px;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+
+    .list {
+        margin: 0 1.5vw;
+        font-size: 14px;
+    }
+
+    .list:hover,
+    .list:focus {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .about:hover,
+    .about:focus {
+        color: #db180f;
+        text-transform: none;
+        margin: 0;
+    }
+
+    .social-links {
+        top: 85vh;
+        left: 75vw;
+        width: 20vw;
+    }
+}

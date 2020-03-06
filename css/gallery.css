@@ -1,0 +1,124 @@
+/* .fold {
+    overflow: hidden;
+    width: 75vw;
+    height: 80vh;
+}
+
+.fold-content {
+    padding-top: 5vh;
+} */
+
+
+.header-description {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.resident {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    max-width: 100vw;
+}
+
+.art {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    align-self: flex-end;
+}
+
+.residents {
+    color: #ffffff;
+    margin: 0 1vw;
+    text-decoration: none;
+    line-height: 1.5;
+    border-bottom: 1px solid #db180f;
+    -webkit-transition: 1s;
+    transition: 1s;
+    letter-spacing: 0.1em; 
+}
+
+.residents:hover,
+.residents:focus {
+    color: #db180f;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;  
+    border-bottom-color: #ffffff;
+}
+
+.cards {
+    padding-top: 3vh;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.photo {
+    max-width: 35vw;
+    margin: 5px;
+}
+
+.druzhba001,
+.druzhba002 {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.druzhba-button {
+    color: #ffffff;
+    border-bottom: 1px solid #db180f;
+    border-top: 1px solid #db180f;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 10vh 0;
+}
+
+.druzhba-button:hover {
+    color: #db180f;
+    letter-spacing: 0.2em;
+    border-bottom-color: #ffffff;
+    border-top-color: #ffffff;
+}
+
+.druzhba-button>h1 {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.druzhba-button>h1:hover {
+    letter-spacing: 0.2em;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .header-description {
+        margin-top: 7vh;
+    }
+
+    .resident {
+        padding-bottom: 3vh;
+    }
+
+     /* .fold {
+        width: 80vw;
+    } */
+}
