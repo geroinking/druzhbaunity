@@ -55,5 +55,4 @@ window.addEventListener('scroll', () => {
 
   scrollPos = (document.body.getBoundingClientRect()).top;
 });
-
 // /?
