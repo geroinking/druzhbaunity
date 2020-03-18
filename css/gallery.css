@@ -90,7 +90,7 @@
     border-top: 1px solid #db180f;
     text-decoration: none;
     -webkit-transition: 0.5s;
-    transition: 0.5s;
+    transition: 0.3s;
     margin: 8vh 0;
 }
 
@@ -103,7 +103,7 @@
 
 .druzhba-button>h1 {
     -webkit-transition: 0.5s;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .druzhba-button>h1:hover {

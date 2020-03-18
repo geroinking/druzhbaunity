@@ -1,15 +1,15 @@
 "use strict";
 let centerContent = document.getElementById("center-content"),
-  centerFold = document.getElementById("center-fold"),
-  foldsContent = Array.from(document.getElementsByClassName("fold-content")),
-  targetScroll = -(document.documentElement.scrollTop || document.body.scrollTop),
-  currentScroll = targetScroll,
-  scrollPos = 0,
-  druzhba001 = Array.from(document.getElementsByClassName("druzhba001")),
-  druzhba002 = Array.from(document.getElementsByClassName("druzhba002")),
-  btn1 = document.getElementById('btn1'),
-  btn2 = document.getElementById('btn2');
-
+       centerFold = document.getElementById("center-fold"),
+     foldsContent = Array.from(document.getElementsByClassName("fold-content")),
+     targetScroll = -(document.documentElement.scrollTop || document.body.scrollTop),
+    currentScroll = targetScroll,
+        scrollPos = 0,
+       druzhba001 = Array.from(document.getElementsByClassName("druzhba001")),
+       druzhba002 = Array.from(document.getElementsByClassName("druzhba002")),
+             btn1 = document.getElementById('btn1'),
+             btn2 = document.getElementById('btn2'),
+    druzhbaButton = document.querySelector(".druzhba-button");
 // scroll-3d-Animation
 let tick = () => {
   let overflowHeight = centerContent.clientHeight - centerFold.clientHeight;
@@ -28,31 +28,32 @@ tick();
 
 
 // show and hides frame elements while scrolling
-const hideElem = (element) => {
-  element.classList.add('fadeOutUp');
+const fadeOutUp = (element) => {
+    element.style.transform = 'translateY(-500px)';
+    element.style.transition = '.5s';
 };
 
-const showElem = (element) => {
-  element.classList.remove('fadeOutUp');
-  element.classList.add('fadeInDown');
+const fadeInDown = (element) => {
+  element.style.transform = 'translateY(0px)';
+  element.style.transition = '.5s';
 };
 
-const hideSocial = (element) => {
-  element.classList.add('fadeOutRight');
+const fadeOutRight = (element) => {
+    element.style.transform = 'translateX(500px)';
+    element.style.transition = '.5s';
 };
 
-const showSocial = (element) => {
-  element.classList.remove('fadeOutRight');
-  element.classList.add('fadeInRight');
+const fadeInRight = (element) => {
+  element.style.transform = 'translateX(0px)';
+  element.style.transition = '.5s';
 };
 
 window.addEventListener('scroll', () => {
   let navbar = document.getElementById('navbar'),
-    social = document.getElementById('social');
+      social = document.getElementById('social');
 
-  document.body.getBoundingClientRect().top < scrollPos ? hideElem(navbar) : showElem(navbar);
-  document.body.getBoundingClientRect().top < scrollPos ? hideSocial(social) : showSocial(social);
+  document.body.getBoundingClientRect().top < scrollPos ? fadeOutUp(navbar) : fadeInDown(navbar);
+  document.body.getBoundingClientRect().top < scrollPos ? fadeOutRight(social) : fadeInRight(social);
 
   scrollPos = (document.body.getBoundingClientRect()).top;
 });
-// /?

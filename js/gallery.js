@@ -1,3 +1,4 @@
+"use strict";
 // shows and hides blocks in gallery
 let shoHideDruzhba = () => {
     btn1.addEventListener('click', () => {
@@ -20,4 +21,8 @@ let shoHideDruzhba = () => {
   };
   
   shoHideDruzhba();
-  
+
+  // shows Faded elements residents/artists in gallery
+druzhbaButton.addEventListener('click', () => {
+  console.log(druzhbaButton);
+});
