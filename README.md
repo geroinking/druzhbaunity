@@ -1,2 +1,2 @@
 # druzhbaunity
-WEBSITE for local party events
+website for local art-rave event in Chernihiv
